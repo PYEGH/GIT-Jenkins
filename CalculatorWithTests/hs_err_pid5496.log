@@ -1,0 +1,112 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 368656 bytes for Chunk::new
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   In 32 bit mode, the process size limit was hit
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Use 64 bit Java on a 64 bit OS
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (allocation.cpp:323), pid=5496, tid=5252
+#
+# JRE version:  (7.0_51-b13) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (24.51-b03 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000000001def000):  JavaThread "Unknown thread" [_thread_in_vm, id=5252, stack(0x0000000002570000,0x0000000002670000)]
+
+Stack: [0x0000000002570000,0x0000000002670000]
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x0000000001def000 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=5252, stack(0x0000000002570000,0x0000000002670000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (0 events):
+No events
+
+
+Dynamic libraries:
+0x000000013f470000 - 0x000000013f4a3000 	C:\Program Files\Java\jre7\bin\javaw.exe
+0x0000000077320000 - 0x00000000774c9000 	C:\Windows\SYSTEM32\ntdll.dll
+0x0000000077200000 - 0x000000007731f000 	C:\Windows\system32\kernel32.dll
+0x000007fefd390000 - 0x000007fefd3fb000 	C:\Windows\system32\KERNELBASE.dll
+0x000007fefef60000 - 0x000007feff03b000 	C:\Windows\system32\ADVAPI32.dll
+0x000007fefdc10000 - 0x000007fefdcaf000 	C:\Windows\system32\msvcrt.dll
+0x000007fefed80000 - 0x000007fefed9f000 	C:\Windows\SYSTEM32\sechost.dll
+0x000007fefd8a0000 - 0x000007fefd9cd000 	C:\Windows\system32\RPCRT4.dll
+0x0000000077100000 - 0x00000000771fa000 	C:\Windows\system32\USER32.dll
+0x000007fefdab0000 - 0x000007fefdb17000 	C:\Windows\system32\GDI32.dll
+0x000007fefd890000 - 0x000007fefd89e000 	C:\Windows\system32\LPK.dll
+0x000007fefeaa0000 - 0x000007fefeb69000 	C:\Windows\system32\USP10.dll
+0x000007fefb740000 - 0x000007fefb934000 	C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.17514_none_fa396087175ac9ac\COMCTL32.dll
+0x000007feff300000 - 0x000007feff371000 	C:\Windows\system32\SHLWAPI.dll
+0x000007feff2d0000 - 0x000007feff2fe000 	C:\Windows\system32\IMM32.DLL
+0x000007fefee40000 - 0x000007fefef49000 	C:\Windows\system32\MSCTF.dll
+0x0000000068170000 - 0x0000000068242000 	C:\Program Files\Java\jre7\bin\msvcr100.dll
+0x0000000071300000 - 0x0000000071ac9000 	C:\Program Files\Java\jre7\bin\server\jvm.dll
+0x000007fef49e0000 - 0x000007fef49e9000 	C:\Windows\system32\WSOCK32.dll
+0x000007fefdb20000 - 0x000007fefdb6d000 	C:\Windows\system32\WS2_32.dll
+0x000007fefef50000 - 0x000007fefef58000 	C:\Windows\system32\NSI.dll
+0x000007fef9920000 - 0x000007fef995b000 	C:\Windows\system32\WINMM.dll
+0x00000000774f0000 - 0x00000000774f7000 	C:\Windows\system32\PSAPI.DLL
+0x0000000073ce0000 - 0x0000000073cef000 	C:\Program Files\Java\jre7\bin\verify.dll
+0x0000000073cb0000 - 0x0000000073cd8000 	C:\Program Files\Java\jre7\bin\java.dll
+0x0000000068130000 - 0x0000000068165000 	C:\Program Files\Java\jre7\bin\jdwp.dll
+0x000000006a140000 - 0x000000006a148000 	C:\Program Files\Java\jre7\bin\npt.dll
+0x0000000073c90000 - 0x0000000073ca5000 	C:\Program Files\Java\jre7\bin\zip.dll
+
+VM Arguments:
+jvm_args: -agentlib:jdwp=transport=dt_socket,suspend=y,address=localhost:57648 -Dvisualvm.id=28459719739445 -Dfile.encoding=UTF-8 
+java_command: org.eclipse.jdt.internal.junit.runner.RemoteTestRunner -version 3 -port 57647 -testLoaderClass org.eclipse.jdt.internal.junit4.runner.JUnit4TestLoader -loaderpluginname org.eclipse.jdt.junit4.runtime -classNames com.epam.junit.CalculatorPositiveTests
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\Java\jdk1.7.0_51
+PATH=D:/Java_8/jre.1.8_51/bin/server;D:/Java_8/jre.1.8_51/bin;D:/Java_8/jre.1.8_51/lib/amd64;C:\ProgramData\Oracle\Java\javapath;D:\DB\Oracle\app\oracle\product\10.2.0\server\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\Tex\miktex\bin\x64\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\maven\bin;C:\Program Files\Java\jdk1.7.0_51;D:\Gradle\gradle-2.9\gradle-2.9\bin;;D:\eclipse_kepler;
+USERNAME=Pavel
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 37 Stepping 2, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 , 64 bit Build 7601 Service Pack 1
+
+CPU:total 4 (2 cores per cpu, 2 threads per core) family 6 model 37 stepping 2, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, ht, tsc, tscinvbit
+
+Memory: 4k page, physical 4053776k(843928k free), swap 6304716k(5080k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (24.51-b03) for windows-amd64 JRE (1.7.0_51-b13), built on Dec 18 2013 18:40:56 by "java_re" with unknown MS VC++:1600
+
+time: Mon Feb 29 21:34:22 2016
+elapsed time: 0 seconds
+
