@@ -187,7 +187,7 @@ public class Calculator {
 	}
 
 	public boolean isPrime(int number) {
-		boolean primeNumber = true;
+		boolean primeNumber = true; 
 		int temp;
 
 		for (int i = 2; i <= number / 2; i++) {
